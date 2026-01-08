@@ -21,4 +21,4 @@ Independent Researcher
 
 ## Papers
 
-All papers available on [Zenodo](https://zenodo.org/search?q=creators.name%3A%22Nicholas%20David%20Brown%22).
+All papers available on [Zenodo](https://zenodo.org/search?q=%22Nicholas%20David%20Brown%22).

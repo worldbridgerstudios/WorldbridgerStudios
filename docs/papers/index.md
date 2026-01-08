@@ -1,6 +1,6 @@
 # Published Papers
 
-All papers published on [Zenodo](https://zenodo.org/search?q=creators.name%3A%22Nicholas%20David%20Brown%22) under open access.
+All papers published on [Zenodo](https://zenodo.org/search?q=%22Nicholas%20David%20Brown%22) under open access.
 
 ---
 
