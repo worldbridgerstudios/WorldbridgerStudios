@@ -1,0 +1,104 @@
+# World Bridger Studios - MkDocs Configuration
+
+site_name: World Bridger Studios
+site_description: Independent research bridging science and spirit
+site_author: Nicholas David Brown
+site_url: https://worldbridgerstudios.com/
+
+# Documentation directory
+docs_dir: docs
+
+# Theme - Material
+theme:
+  name: material
+  language: en
+  features:
+    - content.code.copy
+    - content.code.annotate
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.share
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: pink
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: pink
+  font:
+    text: Inter
+    code: JetBrains Mono
+  icon:
+    logo: material/infinity
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.smartsymbols
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.keys
+  - pymdownx.arithmatex:
+      generic: true
+
+# Plugins
+plugins:
+  - search:
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+  - tags:
+      tags_file: tags.md
+
+# Navigation
+nav:
+  - Home: index.md
+  - Papers: papers/index.md
+  - HoloCell: holocell/index.md
+  - Contact: contact.md
+  - Tags: tags.md
+
+# Extra configuration
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/worldbridgerstudios
+    - icon: fontawesome/brands/x-twitter
+      link: https://x.com/holocell369
+  generator: false
+
+extra_javascript:
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
+  - stylesheets/extra.css
