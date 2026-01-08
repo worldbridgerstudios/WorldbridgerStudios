@@ -14,16 +14,16 @@
 
 ---
 
-<a href="https://zenodo.org/search?q=creators.name%3A%22Nicholas%20David%20Brown%22">
-  <img src="https://img.shields.io/badge/Zenodo-Papers-c77dff?style=flat-square&logo=zenodo&logoColor=white" alt="Papers"/>
+<a href="https://zenodo.org/search?q=%22Nicholas%20David%20Brown%22">
+  <img src="https://img.shields.io/badge/Zenodo-Papers-e94560?style=flat-square&logo=zenodo&logoColor=white" alt="Papers"/>
 </a>
 &nbsp;
 <a href="https://pypi.org/project/holocell/">
-  <img src="https://img.shields.io/badge/PyPI-holocell-e94560?style=flat-square&logo=pypi&logoColor=white" alt="HoloCell"/>
+  <img src="https://img.shields.io/badge/PyPI-holocell-00b4d8?style=flat-square&logo=pypi&logoColor=white" alt="HoloCell"/>
 </a>
 &nbsp;
 <a href="https://x.com/holocell369">
-  <img src="https://img.shields.io/badge/X-@holocell369-7b2cbf?style=flat-square&logo=x&logoColor=white" alt="X"/>
+  <img src="https://img.shields.io/badge/X-@holocell369-9d4edd?style=flat-square&logo=x&logoColor=white" alt="X"/>
 </a>
 
 ---
