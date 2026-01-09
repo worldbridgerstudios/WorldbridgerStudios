@@ -5,19 +5,24 @@ site_description: Independent research bridging science and spirit
 site_author: Nicholas David Brown
 site_url: https://worldbridgerstudios.com/
 
-# Documentation directory
 docs_dir: docs
 
-# Theme - Material
 theme:
   name: material
   language: en
+  font:
+    text: Lato
+    code: JetBrains Mono
   features:
-    - content.code.copy
-    - content.code.annotate
-    - navigation.sections
-    - navigation.expand
+    - navigation.tracking
     - navigation.top
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
+    - navigation.sections
+    - toc.integrate
+    - content.code.copy
+    - content.tooltips
     - search.highlight
     - search.share
   palette:
@@ -25,13 +30,16 @@ theme:
       scheme: default
       primary: deep purple
       accent: pink
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: deep purple
       accent: pink
-  font:
-    text: Inter
-    code: JetBrains Mono
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
   icon:
     logo: material/infinity
 
@@ -47,6 +55,8 @@ markdown_extensions:
   - toc:
       permalink: true
       toc_depth: 3
+  - neoteroi.cards
+  - neoteroi.timeline
   - pymdownx.details
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
@@ -72,21 +82,23 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.arithmatex:
       generic: true
+  - pymdownx.snippets:
+      base_path: docs
 
 # Plugins
 plugins:
-  - search:
-      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+  - search
   - tags:
       tags_file: tags.md
 
-# Navigation
+# Navigation - tabs at top
 nav:
   - Home: index.md
-  - Papers: papers/index.md
+  - Papers:
+    - papers/index.md
+  - Timeline: timeline.md
   - HoloCell: holocell/index.md
   - Contact: contact.md
-  - Tags: tags.md
 
 # Extra configuration
 extra:
@@ -99,6 +111,9 @@ extra:
 
 extra_javascript:
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
 
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/cards.css
+  - stylesheets/neoteroi.css

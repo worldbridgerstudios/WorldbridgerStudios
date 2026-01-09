@@ -1,0 +1,83 @@
+/* World Bridger Studios - Neoteroi Plugin Styles */
+
+/* Timeline styling */
+.nt-timeline {
+  --nt-timeline-color: var(--wbs-purple);
+}
+
+.nt-timeline-items {
+  border-left: 2px solid var(--wbs-purple) !important;
+}
+
+.nt-timeline-dot {
+  background: var(--wbs-pink) !important;
+  border: 3px solid var(--wbs-bg-mid) !important;
+  box-shadow: 0 0 12px rgba(233, 69, 96, 0.4);
+}
+
+.nt-timeline-item {
+  padding-left: 2rem !important;
+}
+
+.nt-timeline-item-title {
+  color: var(--wbs-magenta) !important;
+  font-weight: 600;
+}
+
+.nt-timeline-item-title a {
+  color: var(--wbs-magenta) !important;
+  text-decoration: none;
+}
+
+.nt-timeline-item-title a:hover {
+  color: var(--wbs-pink) !important;
+}
+
+.nt-timeline-item-sub {
+  color: var(--wbs-green) !important;
+  font-size: 0.85rem;
+}
+
+.nt-timeline-item-content {
+  color: #b0b0b0;
+  padding: 0.5rem 0 1.5rem;
+}
+
+/* Timeline entry cards */
+.nt-timeline-item-content .entry-card {
+  background: linear-gradient(135deg, rgba(26, 26, 46, 0.8) 0%, rgba(15, 52, 96, 0.6) 100%);
+  border: 1px solid rgba(199, 125, 255, 0.15);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 0.5rem;
+}
+
+.nt-timeline-item-content .entry-card:hover {
+  border-color: rgba(233, 69, 96, 0.4);
+}
+
+/* Spantable styles (if used) */
+.nt-spantable {
+  border: 1px solid rgba(199, 125, 255, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.nt-spantable th {
+  background: rgba(157, 78, 221, 0.2) !important;
+  color: var(--wbs-magenta) !important;
+}
+
+.nt-spantable tr:hover {
+  background: rgba(233, 69, 96, 0.05) !important;
+}
+
+/* Gantt chart styles (if used later) */
+.nt-gantt {
+  --nt-gantt-bar-color: var(--wbs-purple);
+}
+
+/* General neoteroi container styling */
+.nt-container {
+  margin: 1.5rem 0;
+}

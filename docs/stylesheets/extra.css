@@ -1,22 +1,59 @@
-/* World Bridger Studios - Custom Styles */
-
-/* Subtle adjustments to Material theme */
+/* World Bridger Studios - Main Theme */
 
 :root {
-  --md-primary-fg-color: #673ab7;
-  --md-accent-fg-color: #ffc107;
+  /* Core palette - dark moody with feminine pastels */
+  --wbs-bg-dark: #0f0f1a;
+  --wbs-bg-mid: #1a1a2e;
+  --wbs-bg-light: #16213e;
+  
+  /* Accent colors - feminine pastels */
+  --wbs-pink: #e94560;
+  --wbs-magenta: #c77dff;
+  --wbs-purple: #9d4edd;
+  --wbs-cyan: #00b4d8;
+  --wbs-green: #c5e030;  /* Indian bullfrog yellow-green */
+  --wbs-teal: #2dd4bf;
+  
+  /* Material overrides */
+  --md-primary-fg-color: #9d4edd;
+  --md-accent-fg-color: #e94560;
 }
 
-/* Homepage hero styling */
+/* Dark mode enhancements */
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: #0f0f1a;
+  --md-default-fg-color: #e0e0e0;
+  --md-primary-fg-color: #9d4edd;
+  --md-accent-fg-color: #e94560;
+  --md-typeset-a-color: #c77dff;
+}
+
+[data-md-color-scheme="slate"] .md-header {
+  background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 100%);
+}
+
+[data-md-color-scheme="slate"] .md-tabs {
+  background: rgba(15, 15, 26, 0.95);
+  border-bottom: 1px solid rgba(233, 69, 96, 0.3);
+}
+
+[data-md-color-scheme="slate"] .md-tabs__link--active {
+  color: var(--wbs-pink) !important;
+}
+
+/* Navigation styling */
+.md-nav__link:hover {
+  color: var(--wbs-magenta) !important;
+}
+
+/* Homepage hero */
 .md-content h1:first-of-type {
   font-size: 2.5rem;
   font-weight: 700;
-  margin-bottom: 0.5rem;
-}
-
-/* Table styling */
-.md-typeset table:not([class]) {
-  font-size: 0.85rem;
+  background: linear-gradient(135deg, var(--wbs-pink), var(--wbs-magenta), var(--wbs-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 /* Code blocks */
@@ -28,4 +65,34 @@
 .md-button {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+  border-color: var(--wbs-pink) !important;
+}
+
+.md-button:hover {
+  background-color: var(--wbs-pink) !important;
+  border-color: var(--wbs-pink) !important;
+}
+
+/* Subtle glow effects */
+[data-md-color-scheme="slate"] .md-content {
+  background: radial-gradient(ellipse at top right, rgba(199, 125, 255, 0.03) 0%, transparent 50%),
+              radial-gradient(ellipse at bottom left, rgba(233, 69, 96, 0.03) 0%, transparent 50%);
+}
+
+/* Table styling */
+.md-typeset table:not([class]) {
+  font-size: 0.85rem;
+}
+
+/* Admonition colors */
+.md-typeset .admonition.note {
+  border-color: var(--wbs-cyan);
+}
+
+.md-typeset .admonition.tip {
+  border-color: var(--wbs-green);
+}
+
+.md-typeset .admonition.warning {
+  border-color: var(--wbs-pink);
 }
