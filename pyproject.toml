@@ -1,0 +1,16 @@
+[project]
+name = "worldbridgerstudios"
+version = "0.1.0"
+description = "World Bridger Studios website"
+requires-python = ">=3.10"
+dependencies = [
+    "mkdocs>=1.6.0",
+    "mkdocs-material>=9.5.0",
+    "pymdown-extensions>=10.0.0",
+    "Jinja2>=3.1.0",
+    "PyYAML>=6.0.0",
+]
+
+[tool.poe.tasks]
+run = "mkdocs serve"
+build = "mkdocs build"
