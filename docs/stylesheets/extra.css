@@ -54,6 +54,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  text-align: center;
 }
 
 /* Code blocks */
@@ -95,4 +96,56 @@
 
 .md-typeset .admonition.warning {
   border-color: var(--wbs-pink);
+}
+
+/* ============================================
+   Hero Section - Banner + Profile
+   ============================================ */
+
+.hero-section {
+  position: relative;
+  margin: -1rem -1rem 2rem -1rem;
+  width: calc(100% + 2rem);
+}
+
+.hero-banner {
+  height: 200px;
+  background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 50%, #1a1a2e 100%);
+  /* Will be replaced with: background-image: url('images/banner.jpg'); */
+  background-size: cover;
+  background-position: center;
+  border-bottom: 2px solid rgba(233, 69, 96, 0.3);
+}
+
+.hero-profile {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: -60px;
+  margin-bottom: 1rem;
+}
+
+.profile-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid var(--wbs-bg-dark);
+  box-shadow: 0 4px 20px rgba(233, 69, 96, 0.3),
+              0 0 40px rgba(199, 125, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.profile-avatar:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 30px rgba(233, 69, 96, 0.4),
+              0 0 60px rgba(199, 125, 255, 0.2);
+}
+
+/* Full-width hero for homepage */
+@media (min-width: 76.25em) {
+  .hero-section {
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    width: 100vw;
+  }
 }

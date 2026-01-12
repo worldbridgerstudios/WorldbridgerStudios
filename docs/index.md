@@ -4,6 +4,14 @@ hide:
   - toc
 ---
 
+<!-- Hero Section with Profile -->
+<div class="hero-section">
+  <div class="hero-banner"></div>
+  <div class="hero-profile">
+    <img src="images/profile-circle.png" alt="Nicholas David Brown" class="profile-avatar">
+  </div>
+</div>
+
 # World Bridger Studios
 
 <div style="text-align: center; margin-bottom: 2rem;">

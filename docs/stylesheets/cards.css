@@ -1,100 +1,84 @@
 /* World Bridger Studios - Card Styles */
 
-/* Paper cards on homepage */
-.paper-card {
-  background: linear-gradient(135deg, rgba(26, 26, 46, 0.9) 0%, rgba(15, 52, 96, 0.9) 100%);
-  border: 1px solid rgba(199, 125, 255, 0.2);
-  border-radius: 12px;
-  transition: all 0.3s ease;
-  overflow: hidden;
+/* Neoteroi cards grid - make it squarish */
+.nt-cards {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 1.5rem !important;
 }
 
-.paper-card:hover {
-  border-color: var(--wbs-pink);
-  transform: translateY(-4px);
-  box-shadow: 0 8px 32px rgba(233, 69, 96, 0.2);
+@media (max-width: 900px) {
+  .nt-cards {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
 }
 
-.paper-card img {
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
-  border-bottom: 1px solid rgba(199, 125, 255, 0.2);
+@media (max-width: 600px) {
+  .nt-cards {
+    grid-template-columns: 1fr !important;
+  }
 }
 
-.paper-card h3 {
-  color: var(--wbs-magenta);
-  font-size: 1.1rem;
-  margin: 0.75rem 1rem 0.5rem;
-}
-
-.paper-card p {
-  color: #a0a0a0;
-  font-size: 0.85rem;
-  margin: 0 1rem 1rem;
-  line-height: 1.4;
-}
-
-.paper-card .card-meta {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.75rem 1rem;
-  background: rgba(0, 0, 0, 0.2);
-  font-size: 0.75rem;
-}
-
-.paper-card .card-date {
-  color: var(--wbs-green);
-}
-
-.paper-card .card-link {
-  color: var(--wbs-pink);
-  text-decoration: none;
-}
-
-.paper-card .card-link:hover {
-  text-decoration: underline;
-}
-
-/* Neoteroi card overrides for our theme */
+/* Individual card styling */
 .nt-card {
   background: linear-gradient(135deg, rgba(26, 26, 46, 0.95) 0%, rgba(15, 52, 96, 0.8) 100%) !important;
   border: 1px solid rgba(199, 125, 255, 0.2) !important;
   border-radius: 12px !important;
   transition: all 0.3s ease !important;
+  overflow: hidden !important;
+  display: flex !important;
+  flex-direction: column !important;
 }
 
 .nt-card:hover {
   border-color: var(--wbs-pink) !important;
   transform: translateY(-4px);
-  box-shadow: 0 8px 32px rgba(233, 69, 96, 0.15) !important;
+  box-shadow: 0 8px 32px rgba(233, 69, 96, 0.2) !important;
 }
 
-.nt-card img {
-  border-radius: 8px 8px 0 0;
+/* Card image container */
+.nt-card-content img {
+  width: 100% !important;
+  height: 160px !important;
+  object-fit: cover !important;
+  border-radius: 8px !important;
+  margin-bottom: 0.75rem !important;
 }
 
+/* Card title */
 .nt-card-title {
   color: var(--wbs-magenta) !important;
+  font-size: 1.1rem !important;
+  margin-bottom: 0.5rem !important;
 }
 
 .nt-card-title a {
   color: var(--wbs-magenta) !important;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .nt-card-title a:hover {
   color: var(--wbs-pink) !important;
 }
 
+/* Card content text */
 .nt-card-content {
   color: #c0c0c0 !important;
+  padding: 1rem !important;
 }
 
-/* Cards grid layout */
-.nt-cards {
-  gap: 1.5rem !important;
+.nt-card-content h4 {
+  color: #e0e0e0 !important;
+  font-size: 0.95rem !important;
+  margin: 0.5rem 0 !important;
+  font-weight: 500 !important;
+}
+
+.nt-card-content p {
+  color: #a0a0a0 !important;
+  font-size: 0.85rem !important;
+  margin: 0.25rem 0 0 !important;
+  line-height: 1.4 !important;
 }
 
 /* Category pills */
@@ -106,6 +90,7 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  margin-top: 0.5rem;
 }
 
 .category-holocell {
